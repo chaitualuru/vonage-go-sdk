@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 
 	"github.com/antihax/optional"
-	"github.com/vonage/vonage-go-sdk/internal/verify"
+	"github.com/chaitualuru/vonage-go-sdk/internal/verify"
 )
 
 // VerifyClient for working with the Verify API

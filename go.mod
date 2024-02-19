@@ -1,4 +1,4 @@
-module github.com/vonage/vonage-go-sdk
+module github.com/chaitualuru/vonage-go-sdk
 
 go 1.13
 
