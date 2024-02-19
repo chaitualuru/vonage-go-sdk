@@ -24,7 +24,7 @@ func TestNccoTalkSimple(t *testing.T) {
 
 func TestNccoTalkAll(t *testing.T) {
 	ncco := Ncco{}
-	talk := TalkAction{Text: "Hello", Loop: "4", BargeIn: true, Level: 1, VoiceName: "Nicole"}
+	talk := TalkAction{Text: "Hello", Loop: "4", BargeIn: true, Level: 1, Language: "en-GB", Style: 5}
 	ncco.AddAction(talk)
 
 	// check the JSON

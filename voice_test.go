@@ -178,7 +178,7 @@ func TestVoiceMakeCallWithNcco(t *testing.T) {
 	to := CallTo{Type: "phone", Number: "447770007788"}
 
 	MyNcco := ncco.Ncco{}
-	talk := ncco.TalkAction{Text: "This is the golang library, calling to say hello", VoiceName: "Nicole"}
+	talk := ncco.TalkAction{Text: "This is the golang library, calling to say hello", Language: "en-GB", Style: 5}
 	MyNcco.AddAction(talk)
 
 	result, _, _ := client.CreateCall(CreateCallOpts{From: from, To: to, Ncco: MyNcco})
@@ -261,7 +261,7 @@ func TestVoiceTransferCallWithNcco(t *testing.T) {
 	client := NewVoiceClient(auth)
 
 	MyNcco := ncco.Ncco{}
-	talk := ncco.TalkAction{Text: "This is the golang library, calling to interrupt the other call", VoiceName: "Nicole"}
+	talk := ncco.TalkAction{Text: "This is the golang library, calling to interrupt the other call", Language: "en-GB", Style: 5}
 	MyNcco.AddAction(talk)
 
 	result, _, _ := client.TransferCall(TransferCallOpts{Uuid: "abcdef01-2222-3333-4444-9876543210ab", Ncco: MyNcco})
